@@ -1,9 +1,12 @@
 package test_data;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
 import java.util.HashMap;
 import java.util.Map;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class HerOkuAppTestData {
+
 
     public Map<String, String> bookingdatesMapMethod(String checkin, String checkout) {
 
