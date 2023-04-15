@@ -4,15 +4,12 @@ import base_urls.HerOkuAppBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.codehaus.jackson.map.ObjectMapper;
-import org.junit.Assert;
 import org.junit.Test;
 import org.testng.asserts.SoftAssert;
 import pojos.BookingDatesPojo;
 import pojos.BookingPojo;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;

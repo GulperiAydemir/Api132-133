@@ -2,14 +2,11 @@ package herokuapp_smoketest;
 
 import base_urls.HerOkuAppBaseUrl;
 import io.restassured.response.Response;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
 import pojos.BookingDatesPojo;
 import pojos.BookingPojo;
 import pojos.BookingResponsePojo;
 import utils.ObjectMapperUtils;
-
-import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;

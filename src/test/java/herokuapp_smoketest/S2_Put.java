@@ -10,7 +10,6 @@ import utils.ObjectMapperUtils;
 import static herokuapp_smoketest.S1_Post.bookingId;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
-import static utils.AuthenticationHerOkuApp.generateToken;
 
 public class S2_Put extends HerOkuAppBaseUrl {
     /*

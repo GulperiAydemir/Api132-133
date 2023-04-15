@@ -1,3 +1,4 @@
+package Gmibank_api;
 
 import base_urls.GmiBankBaseUrl;
 import io.restassured.response.Response;
@@ -93,8 +94,19 @@ public class GetCustomer extends GmiBankBaseUrl {
         assertEquals(expectedData.getCity(),actualData.getCity());
         assertEquals(expectedData.getSsn(),actualData.getSsn());
         assertEquals(expectedData.getCreateDate(),actualData.getCreateDate());
-        //assertEquals(expectedData.get,actualData.getCreateDate());
-        assertEquals(expectedData.getCountry(),actualData.getCreateDate());
+        assertEquals(expectedData.isZelleEnrolled(),actualData.isZelleEnrolled());
+        assertEquals(expectedData.getCountry().getId(),actualData.getCountry().getId());
+        assertEquals(expectedData.getCountry().getName(),actualData.getCountry().getName());
+        assertEquals(expectedData.getCountry().getStates(),actualData.getCountry().getStates());
+        assertEquals(expectedData.getUser().getId(),actualData.getUser().getId());
+        assertEquals(expectedData.getUser().getLogin(),actualData.getUser().getLogin());
+        assertEquals(expectedData.getUser().getFirstName(),actualData.getUser().getFirstName());
+        assertEquals(expectedData.getUser().getLastName(),actualData.getUser().getLastName());
+        assertEquals(expectedData.getUser().getEmail(),actualData.getUser().getEmail());
+        assertEquals(expectedData.getUser().isActivated(),actualData.getUser().isActivated());
+        assertEquals(expectedData.getUser().getLangKey(),actualData.getUser().getLangKey());
+        assertEquals(expectedData.getUser().getImageUrl(),actualData.getUser().getImageUrl());
+        assertEquals(expectedData.getUser().getResetDate(),actualData.getUser().getResetDate());
 
         //Rest is homework...
 
